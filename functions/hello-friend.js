@@ -1,4 +1,4 @@
-exports.handler = async () => {
+exports.handler = async event => {
     const queryString = event.queryStringParameters
     const friend = queryString.friend || "friend"
     return {
