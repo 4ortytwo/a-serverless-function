@@ -1,4 +1,4 @@
-exports.handler = async () => ({
+exports.handler = async (event, context, callback) => ({
     statusCode: 200,
-    body: 'FIRST SERVERLESS',
+    body: `${event}, ${context}, ${callback}`,
 })
